@@ -14,7 +14,7 @@
             background-color: #f9f9f9;
         }
         
-        /* ヘッダーの背景をフランスの国旗（青・白・赤）に変更 */
+        /* ヘッダーの背景（フランス国旗） */
         header {
             background: linear-gradient(to right, 
                 #0055A5 0%, #0055A5 33.33%, 
@@ -22,10 +22,9 @@
                 #EF4135 66.66%, #EF4135 100%
             );
             text-align: center;
-            padding: 4rem 0; /* 少し縦幅を広げて国旗らしさを強調 */
+            padding: 4rem 0;
         }
 
-        /* 国旗の「白」の部分でも文字が読めるように、黒い影をつけて白文字をくっきりさせています */
         header h1 {
             margin: 0;
             font-size: 2.5rem;
@@ -45,9 +44,9 @@
             padding: 0 1rem;
         }
         h2 {
-            border-left: 5px solid #EF4135; /* フランスの赤 */
+            border-left: 5px solid #EF4135;
             padding-left: 10px;
-            color: #0055A5; /* フランスの青 */
+            color: #0055A5;
         }
         .info-table {
             width: 100%;
@@ -63,6 +62,38 @@
             background-color: #f2f2f2;
             width: 30%;
         }
+
+        /* 新しく追加した写真ギャラリー用のデザイン */
+        .gallery {
+            margin-top: 1.5rem;
+        }
+        .gallery-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .gallery-caption {
+            padding: 15px;
+        }
+        .gallery-caption h3 {
+            margin: 0 0 8px 0;
+            color: #0055A5;
+            font-size: 1.2rem;
+        }
+        .gallery-caption p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: #666;
+        }
+
         footer {
             text-align: center;
             padding: 1rem 0;
@@ -76,13 +107,13 @@
 
     <header>
         <h1>フランス共和国</h1>
-        <p>芸術、美食、そして歴史が織りなす魅惑の国</p>
+        <p>芸術、美食、 tender 歴史が織りなす魅惑の国</p>
     </header>
 
     <main>
         <section>
             <h2>フランスってどんな国？</h2>
-            <p>フランスは西ヨーロッパに位置する国で、世界中から観光客が集まる人気の国です。美しい街並み、豊かな食文化、 tender 数々の世界遺産や芸術作品で知られています。</p>
+            <p>フランスは西ヨーロッパに位置する国で、世界中から観光客が集まる人気の国です。美しい街並み、豊かな食文化、そして数々の世界遺産や芸術作品で知られています。</p>
         </section>
 
         <section>
@@ -105,6 +136,37 @@
                     <td>エッフェル塔、ルーヴル美術館、モン・サン・ミッシェル</td>
                 </tr>
             </table>
+        </section>
+
+        <section>
+            <h2>代表的な観光地</h2>
+            <div class="gallery">
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80" alt="エッフェル塔">
+                    <div class="gallery-caption">
+                        <h3>エッフェル塔（Tour Eiffel）</h3>
+                        <p>パリの象徴であり、世界で最も多くの人が訪れる有料建造物の一つです。夜のライトアップも非常に幻想的です。</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1597958210826-1e249a207e02?auto=format&fit=crop&w=800&q=80" alt="ルーヴル美術館">
+                    <div class="gallery-caption">
+                        <h3>ルーヴル美術館（Musée du Louvre）</h3>
+                        <p>パリにある世界最大級の美術館。「モナ・リザ」や「サモトラケのニケ」など、教科書で見たことのある貴重な芸術品が多数展示されています。</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=800&q=80" alt="モン・サン・ミッシェル">
+                    <div class="gallery-caption">
+                        <h3>モン・サン・ミッシェル（Mont Saint-Michel）</h3>
+                        <p>ノルマンディー地方の湾に浮かぶ孤島に築かれた修道院です。潮の満ち引きによって表情を変える、世界遺産の神秘的な聖地です。</p>
+                    </div>
+                </div>
+
+            </div>
         </section>
 
         <section>
