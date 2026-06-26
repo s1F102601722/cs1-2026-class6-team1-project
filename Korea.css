@@ -67,3 +67,7 @@ footer{
     text-align: center;
     padding: 15px;
 }
+img {
+    width: 300px;
+    height: auto;
+}
