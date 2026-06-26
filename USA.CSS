@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: "Hiragino Sans", sans-serif;
+    background: #f5f5f5;
+}
+
+header {
+    background: #2a4d9b;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.place {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 10%;
+    background: white;
+    margin: 30px auto;
+    border-radius: 12px;
+    max-width: 1000px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.place.reverse {
+    flex-direction: row-reverse;
+}
+
+.place .text {
+    width: 50%;
+}
+
+.place .photo {
+    width: 40%;
+}
+
+.place img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+🔍 補足
+画像ファイル（statue.jpg や monument.jpg）は任意の写真に差し替えてください。
+
+レイアウトはあなたが提示したテンプレート（タイトル → 場所1 → 場所2）に忠実です。
+
+配色は自由に変更可能とのことなので、読みやすいブルー系で整えています。
