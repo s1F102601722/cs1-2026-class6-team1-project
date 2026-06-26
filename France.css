@@ -61,7 +61,7 @@ h2 {
     width: 30%;
 }
 
-/* 写真ギャラリー用のデザイン */
+/* 観光地ギャラリー用のデザイン */
 .gallery {
     margin-top: 1.5rem;
 }
@@ -95,6 +95,59 @@ h2 {
     margin: 0;
     font-size: 0.95rem;
     color: #666;
+}
+
+/* 【新規追加】おすすめの魅力リストのデザイン */
+.charm-list {
+    margin-top: 1.5rem;
+}
+
+.charm-item {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* 左側に配置する写真の設定 */
+.charm-item img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover; /* 写真の比率を保ったまま枠内に収める */
+    display: block;
+}
+
+/* 右側に配置するテキストの設定 */
+.charm-text {
+    padding: 20px;
+    flex: 1;
+}
+
+.charm-text h3 {
+    margin: 0 0 8px 0;
+    color: #EF4135; /* 観光地とは変えて、見出しをフランスの赤に */
+    font-size: 1.2rem;
+}
+
+.charm-text p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* スマホなどの画面が狭いときは、写真と文字を縦並びにする */
+@media (max-width: 600px) {
+    .charm-item {
+        flex-direction: column;
+    }
+    .charm-item img {
+        width: 100%;
+        height: 200px;
+    }
 }
 
 footer {
